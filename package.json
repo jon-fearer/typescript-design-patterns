@@ -1,0 +1,22 @@
+{
+  "name": "typescript-design-patterns",
+  "version": "0.0.1",
+  "description": "GoF design patterns implemented in TypeScript",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jon-fearer/typescript-design-patterns.git"
+  },
+  "author": "Jon Fearer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jon-fearer/typescript-design-patterns/issues"
+  },
+  "homepage": "https://github.com/jon-fearer/typescript-design-patterns#readme",
+  "devDependencies": {
+    "typescript": "^4.2.4"
+  }
+}
