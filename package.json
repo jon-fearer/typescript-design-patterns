@@ -4,7 +4,9 @@
   "description": "GoF design patterns implemented in TypeScript",
   "main": "src/index.ts",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "tsc src/index.ts",
+    "start": "npm run build && node src/index.js"
   },
   "repository": {
     "type": "git",
