@@ -1,5 +1,5 @@
 # GoF (Gang of Four) Design Patterns Implemented in TypeScript
-This repository contains example implementations of the classic
+This repository contains example TypeScript implementations of the classic
 design patterns found in "Design Patterns: Elements of Reusable
 Object-Oriented Software" [[1]](#1).
 
