@@ -1,17 +1,15 @@
 export class Tree {
   protected _branches: number;
 
-  constructor();
-  constructor(tree: Tree);
   constructor(tree?: Tree) {
     this._branches = tree?.branches || 5;
   }
 
-  public clone() {
+  public clone(): Tree {
     return new Tree(this);
   }
 
-  public get branches() {
+  public get branches(): number {
     return this._branches;
   }
 
@@ -24,14 +22,12 @@ export class Tree {
 }
 
 export class BigTree extends Tree {
-  constructor();
-  constructor(bigTree: BigTree);
   constructor(bigTree?: BigTree) {
     super();
     this._branches = bigTree?.branches || 50;
   }
 
-  public clone() {
+  public clone(): BigTree {
     return new BigTree(this);
   }
 }
