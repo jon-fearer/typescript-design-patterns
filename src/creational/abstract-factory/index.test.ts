@@ -1,6 +1,6 @@
 import { MovieFactory, LongMovieFactory, Studio } from '.';
 
-describe('test abstract factory', () => {
+describe('test abstract factory pattern', () => {
   test('should create movie with movie factory', () => {
     const movieFactory = new MovieFactory();
     const studio = new Studio();
