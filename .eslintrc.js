@@ -17,5 +17,6 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': 'error',
     'max-len': ['error', { 'code': 120 }],
     'object-curly-spacing': ['error', 'always'],
+    '@typescript-eslint/member-delimiter-style': 'error',
   },
 };
