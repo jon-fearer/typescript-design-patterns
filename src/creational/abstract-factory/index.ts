@@ -1,5 +1,5 @@
 class Movie {
-  private _length: number;
+  private readonly _length: number;
 
   constructor(length: number) {
     this._length = length;
