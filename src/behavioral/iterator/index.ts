@@ -1,11 +1,11 @@
-interface Iterator<T> {
+interface IIterator<T> {
   first(): void;
   next(): void;
   isDone(): boolean;
   currentItem(): T;
 }
 
-class SomeCollectionIterator<T> implements Iterator<T> {
+class SomeCollectionIterator<T> implements IIterator<T> {
   private readonly _someCollection: SomeCollection<T>;
   private _current = 0;
 
@@ -30,11 +30,11 @@ class SomeCollectionIterator<T> implements Iterator<T> {
   }
 }
 
-interface Aggregate<T> {
-  createIterator(): Iterator<T>;
+interface IAggregate<T> {
+  createIterator(): IIterator<T>;
 }
 
-export class SomeCollection<T> implements Aggregate<T> {
+export class SomeCollection<T> implements IAggregate<T> {
   private readonly _size: number;
   private readonly _list: T[];
 
@@ -74,7 +74,7 @@ export class SomeCollection<T> implements Aggregate<T> {
     this._list[0] = item;
   }
 
-  public createIterator(): Iterator<T> {
+  public createIterator(): IIterator<T> {
     return new SomeCollectionIterator(this);
   }
 }
